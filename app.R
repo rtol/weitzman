@@ -36,8 +36,8 @@ ui <- fluidPage(
         min = -2.9,
         max = 3.3,
         value = 0.2),
-      helpText("The rate of decarbonisation of the energy supply, in percentage.")
-      #plotOutput("plotH")
+      helpText("The rate of decarbonisation of the energy supply, in percentage."),
+      tags$a(href="https://github.com/rtol/SIAM", "Click here for code and data on GitHub")
     ),
     column(3,
       plotOutput("plotP"),
