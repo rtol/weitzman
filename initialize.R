@@ -1,7 +1,5 @@
 source('readdata.R')
-#climsensini <- 3.8
-#climsensmin <- 0.1
-#climsensmax <- 10
+
 StartYear <- Kayadata[1,1]
 NHistYear <- nrow(Kayadata)
 EndHYear <- Kayadata[NHistYear,1]
@@ -45,6 +43,9 @@ Year[1:NHistYear] <- Kayadata[1:NHistYear,1]
 
 Temperature <- matrix(NA,NYear,1)
 Temperature[1:NHistYear] <- Tempdata[1:NHistYear,2]
+
+Impact <- matrix(NA,NYear,1)
+ImpactP <- matrix(NA,NYear,1)
 
 source('initcarboncycle.R')
 source('initclimate.R')
